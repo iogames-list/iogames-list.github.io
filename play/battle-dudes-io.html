@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>1v1.LOL</title>
+    <title>BattleDudes.io</title>
 
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
@@ -19,7 +19,13 @@
     <link rel="stylesheet" href="/css/grid.css" />
 					<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYZLSY9CD3"></script>
-		
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-ZYZLSY9CD3');
+		</script>
     </head>
   </head>
 
@@ -46,12 +52,12 @@
                             <div class="sc-1nfyi8d-0 cToZbD">
                                 <div class="sc-1nfyi8d-1 kmawNJ">
                                     <div class="sc-1nfyi8d-2 ljHJwR">
-                                        <div class="sc-1nfyi8d-3 iIUrNJ" id="game-arena" data-url="https://1v1.lol/">
+                                        <div class="sc-1nfyi8d-3 iIUrNJ" id="game-arena" data-url="https://battledudes.io/">
                                             <div class="game-iframe-container" id="loadgame">
                                                 <div class="talpa-splash-container" style="background: var(--color2);">
                                                     <div class="talpa-splash-top">
                                                         <div>
-                                                            <div style="--thumb:url(/images/logo/1v1-LOL.jpg)" alt="1v1.LOL">
+                                                            <div style="--thumb:url(/images/logo/battle-dudes-io.jpg)" alt="BattleDudes.io">
                                                             </div>
                                                             <button id="play-btn" onclick="playGame()" class="bg-accent shadow-accent-volume hover:bg-accent-dark w-36 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
                                                                 Play
@@ -66,10 +72,10 @@
                                     </div>
                                     <div class="sc-1thi3bz-0 jKLIEp">
                                         <div class="sc-1thi3bz-7 fGkxHt">
-                                            <img alt="1v1.LOL" src="/images/logo/1v1-LOL.jpg" decoding="async" class="sc-1ercfrx-1 kVnwop">
+                                            <img alt="BattleDudes.io" src="/images/logo/battle-dudes-io.jpg" decoding="async" class="sc-1ercfrx-1 kVnwop">
                                             <div class="sc-1ercfrx-2 dWoUha">
                                                 <div class="sc-1ercfrx-3 iAEuVe">
-                                                    <h1 class="sc-1ercfrx-4 kiEtEc">1v1.LOL</h1>
+                                                    <h1 class="sc-1ercfrx-4 kiEtEc">BattleDudes.io</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -100,10 +106,16 @@
             <div style="display: contents;">
                 <article class="npmo3Vk8vdpOrUnRlo4K">
                     <header style="">
-                        <h1 class="Wa2Xpu5vfbxVCjRv2Gv_">1v1.LOL</h1>
+                        <h1 class="Wa2Xpu5vfbxVCjRv2Gv_">BattleDudes.io</h1>
                     </header>
                     <div class="U5UHxulLIj1mqRNKVoIl">
-                        <p>Want to battle a friend online in a crazy fun game?  1v1.LOL is the place for you!  Pick your champion, grab some awesome power-ups, and fight it out in quick, action-packed matches.  This game is like a super-powered game of tag, but way more epic!    With tons of cool characters and special attacks, you can become the ultimate champion.  So challenge your friend, level up your skills, and become the king (or queen) of the 1v1.LOL arena!  It's totally free to play, so what are you waiting for?</p>
+                        <p>BattleDudes.io throws you into wacky arena battles where you fight it out with friends or players worldwide.  This free online game lets you pick up awesome power-ups, unleash super attacks, and knock your opponents off the map in epic showdowns.</p>
+
+						<p>Imagine a giant free-for-all food fight, but way cooler!  BattleDudes.io is all about fast-paced fun and outrageous moves.  Jump, smash, and dodge your way to victory as you collect power-ups that rain down from the sky.  Become invincible, unleash a whirlwind attack, or rain down meteors on your rivals!</p>
+
+						<p>With tons of different characters to choose from, each with their own unique style, you can brawl your way to victory however you like.  Do you prefer to be a speedy attacker, a defensive tank, or a long-range sniper?  The choice is yours!</p>
+
+						<p>BattleDudes.io is the perfect game for a quick burst of fun with friends.  Team up and dominate the arena together, or go solo and see if you can become the last dude standing.  Can you master the moves, dodge the attacks, and become the champion of BattleDudes.io?  Download it for free now and brawl your way to the top!  Just remember, a skilled battler is a strategic dude, so outwit your opponents and claim victory!</p>
                     </div>
                 </article>
             </div>
@@ -131,37 +143,6 @@
     <script src="/js/play.js?v=4"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        function sortByOrder(games) {
-            return games.sort((a, b) => b.order - a.order);
-        }
-        function loadListGame(dataListGame){
-            fetch(dataListGame,{
-                headers: {
-                    'Content-Type': 'application/json',
-                    },
-            }).then(response => response.json())
-            .then(data => {
-                listGame = sortByOrder(data);
-                for (var j=listGame.length-1; j>=0; j--) {
-                    var item = listGame[j];  
-                    var dataLogo = "/images/logo/"+item.img;
-                    var dataAlt = item.title;
-                    var dataHref = "/detail/"+item.slug+".html";
-                    var htmlItem = `
-                        <img src="${dataLogo}" alt="${dataAlt}" loading="lazy" width="94" height="94" decoding="async" class="sc-18mcksl-1 jQcWfv">
-                        <span class="sc-963fcq-0 ibRKmB global-cq-title">${dataAlt}</span>
-                    `;
-                    const e = document.createElement('a');
-                    e.className  = "sc-wr3rvk-0 jcoQuw sc-963fcq-3 djzSvC sc-al88rd-4";
-                    e.href = dataHref;
-                    e.innerHTML = htmlItem;
-                    document.getElementById('load_list_game').appendChild(e);
-                    
-                }
-                document.getElementById('load_list_game').scrollIntoView();
-            });
-
-        }
         $(function() {
             /* Load file header dùng chung */
             $("#load_header").load("/layout/header.html");
@@ -169,8 +150,6 @@
             $("#load_footer").load("/layout/footer.html");
             /* Load file svg dùng chung */
             $("#load_svg").load("/layout/svg-game.html");
-            /* Load list game */
-            loadListGame("/game/all.json");
         });
     </script>
   </body>
