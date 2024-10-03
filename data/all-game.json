@@ -10,10 +10,10 @@
     },
     {
         "slug": "1v1-LOL",
-        "title": "1v1.LOL",
+        "title": "1v1-LOL",
         "cat": "All, New",
         "url": "https://1v1.lol/",
-        "img": "1v1-LOL.jpg",
+        "img": "1v1-lol.jpg",
 		"status": 1,
         "order": 2
     },
