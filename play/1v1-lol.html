@@ -1,177 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <title>1v1.LOL</title>
+    <link rel="icon" href="/images/favicon.png" sizes="32x32">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>3d Car SimulatorMad</title>
+    <meta name="description" content="Geometry Games on Chromebook offer a diverse gaming selection. From casual to competitive, explore an array of titles for seamless enjoyment on the Chromebook platform, catering to various preferences">
+    <meta property="og:url" content="Geometry Games" />
+    <meta property="og:image:width" content="200 px" />
+    <meta property="og:image:height" content="200 px" />
+    <meta property="og:title" content="Geometry Games" />
+    <meta property="og:site_name" content="Geometry Games" />
+    <meta property="og:description" content="Geometry Games on Chromebook offer a diverse gaming selection. From casual to competitive, explore an array of titles for seamless enjoyment on the Chromebook platform, catering to various preferences" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/icon_game.png">
 
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery-comments.css" />
+    <link rel="stylesheet" type="text/css" href="/css/user.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <!-- Font Awesome icons (free version)-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Css -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!--<meta name="robots" content="noindex,nofollow" />-->
-    <!-- Dark Mode JS -->
-    <script src="/js/darkMode.bundle.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <!-- ads -->
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="/img/favicon.png" />
-    <link rel="stylesheet" href="/css/grid.css" />
-					<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYZLSY9CD3"></script>
-		
-    </head>
-  </head>
-
-  <body
-    class="dark:bg-jacarta-900 font-body text-jacarta-500 overflow-x-hidden"
-    itemscope
-    itemtype="http://schema.org/WebPage"
-  >
-    <!-- Header -->
-    <header class="js-page-header fixed top-0 z-20 w-full backdrop-blur transition-colors" style="backdrop-filter:none" id="load_header">
-    </header>
-
-    <main>
-      <!-- Hero -->
-      <div class="relative mx-auto max-w-[90rem] py-20 md:pt-32" style="padding-top: 6rem;">
-        <div id="app-root">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" id="load_svg"></svg>
-            <!-- play game -->
-            <div class="sc-10l37ae-0 jlJlGR">
-                <div class="sc-1o65d6p-0 bprtKa">
-                    <div class="sc-al88rd-7 eOoRZV">
-                        <div id="game-container" class="sc-1t2vga5-0 edLqUo">
-                            <div class="sc-1nfyi8d-0 cToZbD">
-                                <div class="sc-1nfyi8d-1 kmawNJ">
-                                    <div class="sc-1nfyi8d-2 ljHJwR">
-                                        <div class="sc-1nfyi8d-3 iIUrNJ" id="game-arena" data-url="https://1v1.lol/">
-                                            <div class="game-iframe-container" id="loadgame">
-                                                <div class="talpa-splash-container" style="background: var(--color2);">
-                                                    <div class="talpa-splash-top">
-                                                        <div>
-                                                            <div style="--thumb:url(/images/logo/1v1-LOL.jpg)" alt="1v1.LOL">
-                                                            </div>
-                                                            <button id="play-btn" onclick="playGame()" class="bg-accent shadow-accent-volume hover:bg-accent-dark w-36 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-                                                                Play
-                                                            </button>
-                                                            <div class="talpa-loader" style="display: none;">Loading...</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="talpa-splash-bottom"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sc-1thi3bz-0 jKLIEp">
-                                        <div class="sc-1thi3bz-7 fGkxHt">
-                                            <img alt="1v1.LOL" src="/images/logo/1v1-LOL.jpg" decoding="async" class="sc-1ercfrx-1 kVnwop">
-                                            <div class="sc-1ercfrx-2 dWoUha">
-                                                <div class="sc-1ercfrx-3 iAEuVe">
-                                                    <h1 class="sc-1ercfrx-4 kiEtEc">1v1.LOL</h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <div style="display: contents;">
-                                        <button class="sc-1wag0ht-6 bowXgQ">
-                                            <div class="sc-1wag0ht-5 kRNrUr" onclick="open_fullscreen()">
-                                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="sc-1wag0ht-0 kQYXwq">
-                                                    <use xlink:href="#enterFullscreenIcon"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="sc-1wag0ht-1 jfVzqh">
-                                                <span class="sc-1wag0ht-2 sc-1wag0ht-3 gqxDAV aeeAa"></span>
-                                                <span class="sc-1wag0ht-2 sc-1wag0ht-4 gqxDAV kIpmiY" onclick="open_fullscreen()">Fullscreen</span>
-                                            </div>
-                                        </button>
-                                    </div>
-                                </div>
+</head>
+<body id="page-top" style="background: url('/images/background1.png'); background-size: cover;">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav"></nav>
+    <div class="container">
+        <!-- ads_ng -->
+        <div style="text-align:left; font-size: small; font-style: italic;">Advertisement</div>
+        <hr>
+        <hr>
+        <div class="row">
+            <div class="col-md-9">
+                <!-- game play -->
+                <div class="game-container">
+                    <div class="game-content" data-id="169">
+                        <div id="allow_mobile_version"></div>
+                        <div class="game-iframe-container" id="game-player">
+                        <div id="mobile-back-button" draggable="true">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+                        <iframe class="game-iframe" id="game-area" src="https://burgerbounty.github.io/s2/3d-car-simulator" width="480" height="800" scrolling="none" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <div class="header-left">
+                            <h1 class="single-title">1v1.LOL</h1>
+                        </div>
+                        <div class="header-right">
+                            <div class="b-action2">
+                                <a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Fullscreen</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Load list game -->
-                <div style="display: contents;" id="load_list_game">
-                </div>
-            </div>
-            </div>
-            <!-- Content game -->
-            <div style="display: contents;">
-                <article class="npmo3Vk8vdpOrUnRlo4K">
-                    <header style="">
-                        <h1 class="Wa2Xpu5vfbxVCjRv2Gv_">1v1.LOL</h1>
-                    </header>
-                    <div class="U5UHxulLIj1mqRNKVoIl">
-                        <p>Want to battle a friend online in a crazy fun game?  1v1.LOL is the place for you!  Pick your champion, grab some awesome power-ups, and fight it out in quick, action-packed matches.  This game is like a super-powered game of tag, but way more epic!    With tons of cool characters and special attacks, you can become the ultimate champion.  So challenge your friend, level up your skills, and become the king (or queen) of the 1v1.LOL arena!  It's totally free to play, so what are you waiting for?</p>
+                <!-- game details -->
+                <div class="vex_x">
+                    <div style="text-align: justify; margin: 10px 10px 10px 10px;">
+                        <div class="post-intro">
+						<h2 class="post-title">About 1v1.LOL</h2>
+                            <p>1v1.LOL is an action-packed, fast-paced battle royale game that focuses on 1v1. This game has a unique combination of combat and building mechanics.</p>
+                            <p>In 1v1.LOL, your objective is simple-defeat your opponent using a combination of building and combat skills. Use the build mode to create protective structures like walls and ramps. These can be lifesavers during intense battles.</p>
+							<p>Choose your weapon and outmaneuver your opponent in close-quarters combat. The last player standing wins the match.</p>
+                        <h2>The Features</h2>
+							<p>1v1.LOL stands out from other games thanks to a variety of features that enhance gameplay. One of the key aspects of the game is the ability to build structures mid-fight. Players can quickly create walls, ramps, and other defenses to protect themselves while engaging in gunfights. Here are some key features that define the 1v1.LOL experience:</p>
+                            <ul>
+                                <li>Real-time Building: Similar to Fortnite, players can build in real-time to protect themselves or gain a strategic advantage during combat.</li>
+                                <li>Multiple Game Modes: The game offers several modes including 1v1 duels, 2v2, and battle royale, catering to different playstyles.</li>
+                                <li>Weapons Variety: Players have access to a variety of weapons, from shotguns to sniper rifles, to outplay their opponents.</li>
+                                <li>Training Mode: Hone your skills with an AI-based training mode, allowing you to practice both combat and building before jumping into live matches.</li>
+                            </ul>
+						<h2>How to Play 1v1.LOL</h2>
+							<h3>Controls</h3>
+								<ul>
+									<li>LMB to shoot/build</li>
+									<li>WASD to move</li>
+									<li>Spacebar to jump</li>
+									<li>Shift to crouch</li>
+									<li>Z, X, C, V, or Y to switch building platforms</li>
+									<li>F, 1, or 2 to switch weapons</li>
+									<li>R to rotate stair/reload</li>
+									<li>G to make door on platforms</li>
+									<li>E to open doors</li>
+								</ul>
+							<h3>1v1.LOL Gameplay</h3>
+							<p>1v1.LOL’s gameplay is centered around tactical building and shooting. Each round places you in a small arena where you face off against another player, using your skills to build structures and outmaneuver them in combat. The maps are relatively small, ensuring that engagements happen quickly. This fast-paced gameplay demands quick reflexes and strong strategic thinking.</p>
+							<p>Matches can last anywhere from a few seconds to a few minutes, depending on the skill level of the players involved. Success in the game hinges on mastering both building mechanics and weapon handling. Unlike larger-scale battle royales, 1v1.LOL focuses purely on one-on-one combat, which enhances the competitive atmosphere.</p>
+							<h3>Tips and Strategies</h3>
+							<p>To excel in 1v1.LOL, you’ll need to blend combat skills with effective building. Here are some key tips and strategies:</p>
+								<ul>
+									<li>Practice Building: Spend time in the training mode to perfect your building techniques. Quick structures can give you the upper hand in most fights.</li>
+									<li>Use High Ground: Just like in many battle royale games, gaining the high ground provides a significant advantage. Use ramps and builds to maintain an elevated position over your opponent.</li>
+									<li>Switch Between Build and Combat Quickly: One of the most crucial skills is being able to transition between building and shooting seamlessly. Practicing this will make you a more formidable player.</li>
+									<li>Don’t Spam Builds: While it’s tempting to continuously build, it’s better to place calculated structures. Excessive building can leave you vulnerable if you run out of materials.</li>
+									<li>Utilize Cover: Use your builds as cover and avoid engaging in open spaces. Keep moving and building to stay one step ahead of your opponent.</li>
+								</ul>
+						</div>
                     </div>
-                </article>
-            </div>
-        </div>
-        <!-- End play game -->
-        <div style="display: contents;">
-            <div class="sc-1ri0y0w-6 jfAzpO">
-                <div style="background-color: var(--green-7);" class="sc-1ri0y0w-7 lgEayX">
-                    <div decoding="async" class="sc-1ri0y0w-2 mvtOn"></div>
+                </div>
+            </div><!-- end col-9 -->
+            <!-- hot game -->
+            <div class="col-md-3">
+                <div align="center" id="load_hot_games"> 
+                    <div style="color: white;"><h3>Hot Game</h3></div>
+                    <hr>
+                    <!-- ads_d -->
                 </div>
             </div>
+            <!-- and hot game -->
+        </div> <!-- and row -->
+
+        <!-- ads -->
+        <div class="banner-ad-wrapper">
+            <div style="text-align:left; font-size: small; font-style: italic;">Advertisement</div>
+            <hr>
         </div>
 
-    </div>
-        
-    </div>
-      <!-- end hero -->
-    </main>
-    <!-- Footer -->
-    <footer class="dark:bg-jacarta-800 page-footer bg-white" id="load_footer">
-    </footer>
+        <!-- Popular games section -->
+		<!--
+        <div class="vex_x">
+            <div style="text-align: justify; margin: 10px 10px 10px 10px;" >
+                <h3 class="section-title">Popular games</h3>
+                <div class="row grid-container" style="margin-left: 6px;" id="load_popular_games">
+                </div>
+            </div>
+        </div> <!-- end Poplular -->
 
-    <!-- JS Scripts -->
-    <script src="/js/app.bundle.js"></script>
-    <script src="/js/play.js?v=4"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        function sortByOrder(games) {
-            return games.sort((a, b) => b.order - a.order);
-        }
-        function loadListGame(dataListGame){
-            fetch(dataListGame,{
-                headers: {
-                    'Content-Type': 'application/json',
-                    },
-            }).then(response => response.json())
-            .then(data => {
-                listGame = sortByOrder(data);
-                for (var j=listGame.length-1; j>=0; j--) {
-                    var item = listGame[j];  
-                    var dataLogo = "/images/logo/"+item.img;
-                    var dataAlt = item.title;
-                    var dataHref = "/detail/"+item.slug+".html";
-                    var htmlItem = `
-                        <img src="${dataLogo}" alt="${dataAlt}" loading="lazy" width="94" height="94" decoding="async" class="sc-18mcksl-1 jQcWfv">
-                        <span class="sc-963fcq-0 ibRKmB global-cq-title">${dataAlt}</span>
-                    `;
-                    const e = document.createElement('a');
-                    e.className  = "sc-wr3rvk-0 jcoQuw sc-963fcq-3 djzSvC sc-al88rd-4";
-                    e.href = dataHref;
-                    e.innerHTML = htmlItem;
-                    document.getElementById('load_list_game').appendChild(e);
-                    
-                }
-                document.getElementById('load_list_game').scrollIntoView();
-            });
+        <!-- New games section -->
+        <div class="vex_x">
+            <div style="text-align: justify; margin: 10px 10px 10px 10px;" >
+                <h3 class="section-title">All games</h3>
+                <div class="row grid-container" style="margin-left: 6px; margin-right: 6px;" id="load_new_games">
+                </div>
+            </div>
+        </div> <!-- end New -->
 
-        }
-        $(function() {
-            /* Load file header dùng chung */
-            $("#load_header").load("/layout/header.html");
-            /* Load file footer dùng chung */
-            $("#load_footer").load("/layout/footer.html");
-            /* Load file svg dùng chung */
-            $("#load_svg").load("/layout/svg-game.html");
-            /* Load list game */
-            loadListGame("/game/all.json");
-        });
-    </script>
-  </body>
+        <!-- Random games section -->
+		<!--
+        <div class="vex_x">
+            <div style="text-align: justify; margin: 10px 10px 10px 10px;" >
+                <h3 class="section-title">You may like</h3>
+                <div class="row grid-container" style="margin-left: 6px; margin-right: 6px;" id="load_random_games">
+                </div>
+            </div>
+        </div> <!-- end You May Like -->
+
+    </div> <!-- end container -->
+
+    <div class="footer-copyright py-4" id="load_footer"></div>
+</body>
+    <script type="text/javascript" src="/js/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" src="/js/lazysizes.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
 </html>
