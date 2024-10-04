@@ -2,7 +2,7 @@
     {
         "slug": "hills-of-steel-2",
         "title": "Hills Of Steel 2",
-        "cat": "All, New",
+        "cat": "All, New, Hot",
         "url": "https://kdata1.com/2024/05/hillsofsteel/",
         "img": "hills-of-steel-2.jpg",
 		"status": 1,
@@ -29,7 +29,7 @@
     {
         "slug": "bloxd-io",
         "title": "Bloxd.io",
-        "cat": "All, New",
+        "cat": "All, New, Hot",
         "url": "https://bloxd.io/",
         "img": "bloxd-io.jpg",
 		"status": 1,
@@ -38,7 +38,7 @@
     {
         "slug": "ev-io",
         "title": "Ev.io",
-        "cat": "All, New",
+        "cat": "All, New, Hot",
         "url": "https://ev.io/",
         "img": "ev-io.jpeg",
 		"status": 1,
