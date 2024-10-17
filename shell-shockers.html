@@ -3,149 +3,157 @@
   <head>
     <title>Shell Shockers</title>
 
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
+    <link rel="icon" href="/images/favicon.png" sizes="32x32">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Shell Shockers is a fun and unique first-person shooter (FPS) where players take control of egg-shaped characters equipped with powerful weapons.">
+    <meta property="og:url" content="Shell Shockers" />
+    <meta property="og:image:width" content="200 px" />
+    <meta property="og:image:height" content="200 px" />
+    <meta property="og:title" content="Shell Shockers" />
+    <meta property="og:site_name" content="Shell Shockers" />
+    <meta property="og:description" content="Shell Shockers is a fun and unique first-person shooter (FPS) where players take control of egg-shaped characters equipped with powerful weapons." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/icon_game.png">
+	
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery-comments.css" />
+    <link rel="stylesheet" type="text/css" href="/css/user.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <!-- Font Awesome icons (free version)-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Css -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!--<meta name="robots" content="noindex,nofollow" />-->
-    <!-- Dark Mode JS -->
-    <script src="/js/darkMode.bundle.js"></script>
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RXYKYQY7DH"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="/img/favicon.png" />
-    <link rel="stylesheet" href="/css/grid.css" />
-					<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYZLSY9CD3"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+	  gtag('config', 'G-RXYKYQY7DH');
+	</script>
+    <!-- ads -->
 
-		  gtag('config', 'G-ZYZLSY9CD3');
-		</script>
-    </head>
-  </head>
-
-  <body
-    class="dark:bg-jacarta-900 font-body text-jacarta-500 overflow-x-hidden"
-    itemscope
-    itemtype="http://schema.org/WebPage"
-  >
-    <!-- Header -->
-    <header class="js-page-header fixed top-0 z-20 w-full backdrop-blur transition-colors" style="backdrop-filter:none" id="load_header">
-    </header>
-
-    <main>
-      <!-- Hero -->
-      <div class="relative mx-auto max-w-[90rem] py-20 md:pt-32" style="padding-top: 6rem;">
-        <div id="app-root">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" id="load_svg"></svg>
-            <!-- play game -->
-            <div class="sc-10l37ae-0 jlJlGR">
-                <div class="sc-1o65d6p-0 bprtKa">
-                    <div class="sc-al88rd-7 eOoRZV">
-                        <div id="game-container" class="sc-1t2vga5-0 edLqUo">
-                            <div class="sc-1nfyi8d-0 cToZbD">
-                                <div class="sc-1nfyi8d-1 kmawNJ">
-                                    <div class="sc-1nfyi8d-2 ljHJwR">
-                                        <div class="sc-1nfyi8d-3 iIUrNJ" id="game-arena" data-url="https://shellshock.io/">
-                                            <div class="game-iframe-container" id="loadgame">
-                                                <div class="talpa-splash-container" style="background: var(--color2);">
-                                                    <div class="talpa-splash-top">
-                                                        <div>
-                                                            <div style="--thumb:url(/images/logo/shell-shockers.jpg)" alt="Shell Shockers">
-                                                            </div>
-                                                            <button id="play-btn" onclick="playGame()" class="bg-accent shadow-accent-volume hover:bg-accent-dark w-36 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-                                                                Play
-                                                            </button>
-                                                            <div class="talpa-loader" style="display: none;">Loading...</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="talpa-splash-bottom"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sc-1thi3bz-0 jKLIEp">
-                                        <div class="sc-1thi3bz-7 fGkxHt">
-                                            <img alt="Shell Shockers" src="/images/logo/shell-shockers.jpg" decoding="async" class="sc-1ercfrx-1 kVnwop">
-                                            <div class="sc-1ercfrx-2 dWoUha">
-                                                <div class="sc-1ercfrx-3 iAEuVe">
-                                                    <h1 class="sc-1ercfrx-4 kiEtEc">Shell Shockers</h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <div style="display: contents;">
-                                        <button class="sc-1wag0ht-6 bowXgQ">
-                                            <div class="sc-1wag0ht-5 kRNrUr" onclick="open_fullscreen()">
-                                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="sc-1wag0ht-0 kQYXwq">
-                                                    <use xlink:href="#enterFullscreenIcon"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="sc-1wag0ht-1 jfVzqh">
-                                                <span class="sc-1wag0ht-2 sc-1wag0ht-3 gqxDAV aeeAa"></span>
-                                                <span class="sc-1wag0ht-2 sc-1wag0ht-4 gqxDAV kIpmiY" onclick="open_fullscreen()">Fullscreen</span>
-                                            </div>
-                                        </button>
-                                    </div>
-                                </div>
+</head>
+<body id="page-top" style="background: url('/images/background1.png'); background-size: cover;"
+		itemscope
+		itemtype="http://schema.org/WebPage"
+		>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav"></nav>
+    <div class="container">
+        <!-- ads_ng -->
+        <div style="text-align:left; font-size: small; font-style: italic;">Advertisement</div>
+        <hr>
+        <hr>
+        <div class="row">
+            <div class="col-md-9">
+                <!-- game play -->
+                <div class="game-container">
+                    <div class="game-content" data-id="169">
+                        <div id="allow_mobile_version"></div>
+                        <div class="game-iframe-container" id="game-player">
+                        <div id="mobile-back-button" draggable="true">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+                        <iframe class="game-iframe" id="game-area" src="https://shellshock.io" width="480" height="800" scrolling="none" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <div class="header-left">
+                            <h1 class="single-title">Shell Shockers</h1>
+                        </div>
+                        <div class="header-right">
+                            <div class="b-action2">
+                                <a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Fullscreen</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Load list game -->
-                <div style="display: contents;" id="load_list_game">
+				        <!-- New games section -->
+				<div class="vex_x">
+					<div style="text-align: justify; margin: 10px 10px 10px 10px;" >
+						<h3 class="section-title">All games</h3>
+						<div class="row grid-container" style="margin-left: 6px; margin-right: 6px;" id="load_new_games">
+						</div>
+					</div>
+				</div> <!-- end New -->
+
+                <!-- game details -->
+                <div class="vex_x">
+                    <div style="text-align: justify; margin: 10px 10px 10px 10px;">
+                        <div class="post-intro">
+						<h2>Shell Shockers: The Egg-citing Multiplayer FPS Game</h2>
+						<p>Shell Shockers is a fun and unique first-person shooter (FPS) where players take control of egg-shaped characters equipped with powerful weapons.</p>
+						<p>Developed by Blue Wizard Digital, Shell Shockers offers a humorous twist on the traditional FPS genre, turning egg battles into a fast-paced and competitive online multiplayer experience.</p>
+						<h3>A Unique Egg-Based Combat System</h3>
+						<p>What makes Shell Shockers stand out is its creative egg-based combat system. Players are armed with different types of weapons, including rifles, shotguns, and snipers, all while navigating the battlefield as fragile eggs. The game offers multiple modes like Free-for-All, Teams, and Captula the Spatula, which add variety and excitement to each match. The combination of egg-themed humor and intense FPS action creates an experience unlike any other.</p>
+						<h3>Customization and Progression</h3>
+						<p>Shell Shockers allows players to customize their egg warriors with various hats, skins, and other cosmetic items. As players progress through the game, they can unlock more items to personalize their eggs, giving each character a distinct look. The continuous progression and unlockable items keep players engaged and coming back for more fun-filled battles.</p>
+						<h2>How to Play Shell Shockers</h2>
+						<p>Here's how to get started:</p>
+						<ul style="margin-left: 20px">
+									<li style="list-style-type: disc">Control Your Egg: Use the WASD keys to move your egg around the battlefield. Aim and shoot using the mouse, and reload your weapon with the "R" key.</li>
+									<li style="list-style-type: disc">Choose Your Weapon: Players can select from a variety of egg-cellent weapons like the EggK-47, Scrambler shotgun, and Crackshot sniper. Each weapon offers different strengths, so choose the one that fits your playstyle.</li>
+									<li style="list-style-type: disc">Avoid Getting Cracked: As an egg, you're fragile, so avoid taking too much damage from opponents. Use cover and quick movement to outsmart your enemies and avoid being cracked.</li>
+								</ul>
+						<p>Shell Shockers offers a refreshing twist on the traditional FPS, with its egg-themed gameplay and humorous style. Jump into the egg-filled battlefield and test your shooting skills in this cracking good multiplayer experience!</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- end col-9 -->
+            <!-- hot game -->
+            <div class="col-md-3">
+                <div align="center" id="load_hot_games"> 
+                    <div style="color: white;"><h3>Hot Game</h3></div>
+                    <hr>
+                    <!-- ads_d -->
                 </div>
             </div>
-            <!-- Content game -->
-            <div style="display: contents;">
-                <article class="npmo3Vk8vdpOrUnRlo4K">
-                    <header style="">
-                        <h1 class="Wa2Xpu5vfbxVCjRv2Gv_">Shell Shockers</h1>
-                    </header>
-                    <div class="U5UHxulLIj1mqRNKVoIl">
-                        <p>Calling all chicken warriors!   Shell Shockers is the craziest egg-cellent battle royale you'll ever play.  Roll into battle as a tricked-out chicken and scramble to become the last bird standing!  Yolk it up with friends or fight solo in this free-for-all feathery frenzy.</p>
+            <!-- and hot game -->
+        </div> <!-- and row -->
 
-						<p>Hunt down power-ups, dodge rotten eggs, and shell your rivals with style!  There's a whole coop full of different maps to explore, each with its own yolky surprises.  You can even customize your clucker with tons of wacky hats and gear.  So sharpen your beak, crack open some fun, and become the top chicken in Shell Shockers!  It's free to play, so don't be a chicken - hatch a plan and join the battle!</p>
-                    </div>
-                </article>
-            </div>
+        <!-- ads -->
+        <div class="banner-ad-wrapper">
+            <div style="text-align:left; font-size: small; font-style: italic;">Advertisement</div>
+            <hr>
         </div>
-        <!-- End play game -->
-        <div style="display: contents;">
-            <div class="sc-1ri0y0w-6 jfAzpO">
-                <div style="background-color: var(--green-7);" class="sc-1ri0y0w-7 lgEayX">
-                    <div decoding="async" class="sc-1ri0y0w-2 mvtOn"></div>
+
+        <!-- Popular games section -->
+		<!--
+        <div class="vex_x">
+            <div style="text-align: justify; margin: 10px 10px 10px 10px;" >
+                <h3 class="section-title">Popular games</h3>
+                <div class="row grid-container" style="margin-left: 6px;" id="load_popular_games">
                 </div>
             </div>
-        </div>
+        </div> <!-- end Poplular -->
 
-    </div>
-        
-    </div>
-      <!-- end hero -->
-    </main>
-    <!-- Footer -->
-    <footer class="dark:bg-jacarta-800 page-footer bg-white" id="load_footer">
-    </footer>
+        <!-- Random games section -->
+		<!--
+        <div class="vex_x">
+            <div style="text-align: justify; margin: 10px 10px 10px 10px;" >
+                <h3 class="section-title">You may like</h3>
+                <div class="row grid-container" style="margin-left: 6px; margin-right: 6px;" id="load_random_games">
+                </div>
+            </div>
+        </div> <!-- end You May Like -->
 
-    <!-- JS Scripts -->
-    <script src="/js/app.bundle.js"></script>
-    <script src="/js/play.js?v=4"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(function() {
-            /* Load file header dùng chung */
-            $("#load_header").load("/layout/header.html");
-            /* Load file footer dùng chung */
-            $("#load_footer").load("/layout/footer.html");
-            /* Load file svg dùng chung */
-            $("#load_svg").load("/layout/svg-game.html");
-        });
-    </script>
-  </body>
+    </div> <!-- end container -->
+
+    <div class="footer-copyright py-4" id="load_footer"></div>
+</body>
+    <script type="text/javascript" src="/js/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" src="/js/lazysizes.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
 </html>
